@@ -1,0 +1,7 @@
+store: C:/Users/17678/Desktop/MyGit/picture-wall/store/
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 40MB
+      max-request-size: 40MB

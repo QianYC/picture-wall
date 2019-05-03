@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture Wall</title>
+</head>
+<body>
+<th:block th:each="url : ${urls}">
+    <table>
+        <tr><th><img th:src="${url}" th:width="400" th:height="300"></th></tr>
+        <tr><th th:text="${url}"/></tr>
+    </table>
+</th:block>
+</body>
+</html>
