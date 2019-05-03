@@ -39,7 +39,7 @@ public class IndexController {
     public String index(Model model) {
         //read images from the directory
         List<String>urls= Arrays.stream(dir.list())
-//                .map(x->"/images/"+x)
+                .map(x->"/image/"+x)
                 .filter(x->true)
                 .collect(Collectors.toList());
         model.addAttribute("urls", urls);
