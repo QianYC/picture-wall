@@ -10,12 +10,14 @@
 <table style="width: 100%">
     <tr>
         <th style="width: 10%"><img th:src="@{robot.png}" th:width="150" th:height="200"/></th>
-        <th><p style="text-align: center;font-size: xx-large">MAGUS.Pi</p></th>
+        <th><p style="text-align: center;font-size: 70px">MAGUS.Pi</p></th>
         <th style="width: 10%"/><!--这一列是为了文字能够处于页面中间-->
     </tr>
 </table>
 <th:block th:each="url : ${urls}">
-    <a th:href="@{${url}}"><img th:src="${url}" th:width="400" th:height="300"></a>
+    <a th:href="@{${url}}">
+        <img th:src="${url}" th:width="360" th:height="270" style="margin: 5px">
+    </a>
 </th:block>
 </body>
 </html>
