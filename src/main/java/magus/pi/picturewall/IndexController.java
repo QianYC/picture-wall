@@ -35,7 +35,7 @@ public class IndexController {
         }
     }
 
-    @GetMapping("/index")
+    @GetMapping("/home")
     public String index(Model model) {
         //read images from the directory
         List<String>urls= Arrays.stream(dir.list())

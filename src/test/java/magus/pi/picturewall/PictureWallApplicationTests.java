@@ -39,7 +39,7 @@ public class PictureWallApplicationTests {
 
     @Test
     public void contextLoads() throws Exception {
-        MockHttpServletRequestBuilder builder = MockMvcRequestBuilders.get("/index");
+        MockHttpServletRequestBuilder builder = MockMvcRequestBuilders.get("/home");
         MvcResult result = mvc.perform(builder).andReturn();
         assertEquals(HttpStatus.OK.value(), result.getResponse().getStatus());
     }
